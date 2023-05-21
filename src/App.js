@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import menu from './Components/menu';
+
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <menu></menu>
         <a
           className="App-link"
           href="https://reactjs.org"
