@@ -4,7 +4,7 @@ import Cartas from "./Cartas"
 
 const Inicio = () => {
     return (
-        <div>
+        <div className="Inicio">
             <Carrusel />
             <div class="p-2 bg-light border">
                 <Cartas />

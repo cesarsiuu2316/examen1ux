@@ -28,11 +28,11 @@ const InfoJovenes = () => {
                 <img src={DCU} className="responsiveImg" alt="404"></img>
 
                 <h2>Proceso del Diseño Centrado en el Usuario (DCU)</h2>
-                <h4>
+                <h6>
                     Experiencia de Usuario (UX): Proceso de aumentar la satisfacción y
                     lealtad del cliente mediante la mejora de la usabilidad y la facilidad
                     de uso de un producto.
-                </h4>
+                </h6>
                 <ul class="list-group">
                     <li class="list-group-item">
                         1. Supuestos y requerimientos: Se realiza la primera arquitectura
@@ -52,11 +52,9 @@ const InfoJovenes = () => {
                         <img src={DCU4} className="responsiveImg" alt="404"></img>
                     </li>
                 </ul>
-                <h4>
-                    Experiencia de Usuario (UX): Proceso de aumentar la satisfacción y
-                    lealtad del cliente mediante la mejora de la usabilidad y la facilidad
-                    de uso de un producto.
-                </h4>
+                <h6>
+                    Interfaz de Usuario (UI): Lo que permite la interacción del usuario con nuestra aplicación o página web.
+                </h6>
                 <ul class="list-group">
                     <li class="list-group-item">
                         1. Arquitectura alfa: Se utilizan los análisis de personas y
