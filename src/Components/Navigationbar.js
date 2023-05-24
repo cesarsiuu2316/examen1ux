@@ -5,7 +5,7 @@ const Navigationbar = () => {
     return (
         <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
             <Container>
-            <Navbar.Brand href="/">UNITEC</Navbar.Brand>
+            <Navbar.Brand href="/"><img src="https://fundahrse.org/wp-content/uploads/2022/08/Logo-35-an%CC%83os-full-color-3.png" width="100"/></Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 <Nav>
