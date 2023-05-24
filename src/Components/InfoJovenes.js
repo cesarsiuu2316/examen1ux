@@ -11,12 +11,25 @@ import DCU10 from "../Images/DCU10.png";
 import DCU11 from "../Images/DCU11.png";
 import DCU12 from "../Images/DCU12.png";
 import atomic from "../Images/atomic.png";
-import Footer from "./Footer";
+import { useState, react } from "react";
 
 const InfoJovenes = () => {
+    const [textInput, setTextInput] = useState("");
+    const [resultadoBusqueda, setResultadoBusqueda] = useState("");
     return (
         <div className="InformacionJovenes">
             <div className="DCU">
+                <form class="d-flex" role="search" onSubmit={(event) => {
+                    event.preventDefault();
+                }}>
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" onChange={(event) => {
+                        setTextInput(event.target.value);
+                    }}></input>
+                    <button class="btn btn-outline-success" type="submit" onClick={() => {
+                        setResultadoBusqueda(textInput);
+                    }}>Buscar</button>
+                </form>
+                {resultadoBusqueda && <h6>No pudimos encontrar: {resultadoBusqueda}</h6>}
                 <h1>¿Diseño Centrado en el Usuario (DCU), qué es?</h1>
                 <p>
                     El diseño centrado en el usuario (DCU) es una metodología de diseño
@@ -123,6 +136,30 @@ const InfoJovenes = () => {
                     <li class="list-group-item">Plantillas: Grupos de organismos que forman una página.</li>
                     <li class="list-group-item">Páginas: Un sistema donde podemos ver muchas plantillas. Esta es nuestra aplicación como producto final.</li>
                 </ol>
+            </div>
+            <div id="contacto">
+                <h1>Foro de discusión</h1>
+                <div class="container">
+                    <form class="row g-5">
+                        <div class="col-6">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre"></input>
+                        </div>
+                        <div class="col-12">
+                            <label for="emailInput" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Escribe tu email"></input>
+                        </div>
+                        <div class="col-12">
+                            <label for="comentario" class="form-label">Comentario</label>
+                            <input type="text" class="form-control" id="comentario" placeholder="Escribe tu comentario"></input>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">
+                                Enviar
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     );

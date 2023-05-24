@@ -44,10 +44,17 @@
 
 .InformacionAdultos{
   font-size: x-large;
+  background-color: #fdf3e7;
 }
 
 .InformacionJovenes{
   font-family:cursive;
+  background-color: #9ccfff;
+}
+
+.InformacionJovenes #contacto{
+  padding: 20px;
+  background-color: #78bbfa;
 }
 
 .DCU{
@@ -64,7 +71,6 @@
 .AtomicDesign h1, .AtomicDesign p, .AtomicDesign img, .AtomicDesign h3, .AtomicDesign ol{
   padding: 10px;
 }
-
 
 .AtomicDesign{
   padding: 40px 15%;
