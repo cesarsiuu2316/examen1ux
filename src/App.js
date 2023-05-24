@@ -2,6 +2,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
 import InfoJovenes from './Components/InfoJovenes';
+import InfoAdultos from './Components/InfoAdultos';
 import Ejemplo from './Components/Ejemplo';
 import Inicio from './Components/Inicio';
 import Navigationbar from './Components/Navigationbar';
@@ -14,6 +15,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Inicio} />
           <Route path='/infoJovenes' component={InfoJovenes} />
+          <Route path='/infoAdultos' component={InfoAdultos} />
           <Route path='/ejemplo' component={Ejemplo} />
         </Switch>
       </Router>
