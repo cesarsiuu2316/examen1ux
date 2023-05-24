@@ -5,15 +5,15 @@ import Cartas from "./Cartas"
 const Inicio = () => {
     return (
         <div>
-            <Carrusel/>
+            <Carrusel />
             <div class="p-2 bg-light border">
-            <Cartas/>
+                <Cartas />
             </div>
             <div class="p-2 bg-light border">
-            <Footer/>
+                <Footer />
             </div>
         </div>
     );
 }
- 
+
 export default Inicio;
